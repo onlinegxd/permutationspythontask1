@@ -1,4 +1,3 @@
-import itertools
-
+from itertools import permutations
 val = input("Enter symbols\n")
-print(list(itertools.permutations(val)))
+print([''.join(p) for p in permutations(val)])
